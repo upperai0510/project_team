@@ -4,7 +4,7 @@
 
 ##### Network
 
-![1](./pic/1.png =100x20)
+![1](./pic/1.png)
 * intermediate latent vector 
     **기본 genterator**
     생성된 latent vector를 바로 GAN generator에 사용하게되면, train dataset에 entangle하게됨.
