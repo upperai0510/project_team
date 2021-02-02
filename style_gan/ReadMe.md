@@ -52,7 +52,7 @@
 * Metric
     FID (Frechet inception distance score)
 * Result
-    ![5](./pic/5.jpeg)
+![5](./pic/5.jpeg)
 
 ##### Disentangle
 ![3](./pic/3.png)
