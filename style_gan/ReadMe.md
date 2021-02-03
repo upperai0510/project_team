@@ -28,12 +28,17 @@
     노이즈를 추가하는 이유는 머리카락과 같은 디테일한 부분을 stochastic적으로 추가하기위함이다.
 
 * truncation trick
+    latent vector를 구하는 과정에서 minor한 분포를 갖는 이미지는 고려되지 않는 경우가 있음.
+    이를 truncation trick을 이용해서 줄이고자함.
+    ![7](./pic/7.jpeg)
+    다음과 같이 평균에서 일부 떨어진 latent vector를 학습시킴.
 
 ##### Feature
 * Style Mixing
     2 개의 latent vector W를 이용한다.
     2개의 latent vector를 랜덤하게 style tensor로 사용한다.
     스타일이 서로 correlated하는 것을 방지한다.
+    
   **result**
     ![4](./pic/4.jpeg)
 * Stochastic variation
