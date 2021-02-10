@@ -1,3 +1,4 @@
-PROJECT TEAM
+띰띰_2_A
+
 - Object Detection (Faster-R-CNN)
 - Style Transfer (Style-Gan)
