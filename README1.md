@@ -1,3 +1,3 @@
-project_team
+PROJECT TEAM
 - Deepfake
 - Object Detection
