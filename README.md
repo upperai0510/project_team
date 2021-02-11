@@ -1,2 +1,0 @@
-PROJECT TEAM
-- Object Detection
