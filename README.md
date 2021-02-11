@@ -1,5 +1,3 @@
-# project_team
-
 # 공부하자
 -detection : Mask R-CNN
 
