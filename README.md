@@ -1,2 +1,4 @@
+Sun
 PROJECT TEAM
-- Object Detection
+- DeepFake
+- Anomaly Detection
