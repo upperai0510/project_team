@@ -44,7 +44,7 @@ SVDD는 input space에 있는 데이터들을 특정 kernel function에 넣어 f
 * Hyperparameters
   * kernel function
 
-![image-20210216210638900](C:\Users\sunpy\AppData\Roaming\Typora\typora-user-images\image-20210216210638900.png)
+![image-20210216210638900](img/image-20210216210638900.png)
 
 
 
@@ -59,7 +59,7 @@ Deep SVDD는기존 SVDD에서 input space에서 feature space로 매칭하는 �
 
 Deep SVDD는 구 외부에 있는 데이터에 패널티를 부여하는 Soft-boundary Deep SVDD와 단순화한 One-Class Deep SVDD가 있습니다.
 
-![image-20210215204258351](C:\Users\sunpy\AppData\Roaming\Typora\typora-user-images\image-20210215204258351.png)
+![image-20210215204258351](img/image-20210215204258351.png)
 
 ![deep SVDD 이미지 검색결과](https://postfiles.pstatic.net/MjAyMDExMTJfMTUx/MDAxNjA1MTgxNjAyNzkw.YBBiQr2ZcpinwUqwyvjTOMTzV2oMsd-qXPF1KtbU3Lwg.knZdrABB-zvKaCXpVaz7dfag71FlmUsNXXmQ_zjf25Qg.PNG.winddori2002/%EC%BA%A1%EC%B2%98.PNG?type=w773)
 
@@ -71,7 +71,7 @@ Deep SVDD는 구 외부에 있는 데이터에 패널티를 부여하는 Soft-bo
   * c : center
 * Objective Function
 
-![image-20210216212134287](C:\Users\sunpy\AppData\Roaming\Typora\typora-user-images\image-20210216212134287.png)
+![image-20210216212134287](img/image-20210216212134287.png)
 
 W와 R을 동시에 최적화하기 위해 W와 R을 교대로 최적화합니다.
 
@@ -87,10 +87,10 @@ Objective 최적화를 통해 W는 feature space로 매핑되는 데이터를 �
 
 * Objective Function
 
-![image-20210216215549860](C:\Users\sunpy\AppData\Roaming\Typora\typora-user-images\image-20210216215549860.png)
+![image-20210216215549860](img/image-20210216215549860.png)
 
 * anomaly score
   * W* = 학습된 가중치
   * 정상 데이터
 
-![image-20210216220722270](C:\Users\sunpy\AppData\Roaming\Typora\typora-user-images\image-20210216220722270.png)
+![image-20210216220722270](img/image-20210216220722270.png)
