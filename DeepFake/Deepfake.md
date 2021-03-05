@@ -55,9 +55,9 @@ Autoencoder는 인코더(Encode)와 디코더(Decoder)로 구성됩니다.  Auto
 
 다시 Deepfake로 돌아와서 Deepfake의 순서를 살펴보겠습니다. 
 
-1. 학습을 위해 이미지에서 사람의 얼굴 부분을 추출합니다.  alignments file , mask과 같은 파일을 추가적으로 추출 할 수 있습니다. 이 때 동영상을 기준으로 한다면 동영상에서 미리 프레임 단위로 쪼개 이미지를 저장해야합니다.![0](img\0.jpg)![0_face](img\0_face.jpg)
-2. 1번 과정에서 준비한 얼굴 이미지로 Autoencoder 학습을 진행합니다. 여기서 Deepfake의 핵심 아이디어는 Autoencoder에서 Source와 Target 둘 모두  같은Encoder를 사용하도록 하고, Decoder 부분은 서로 다른 Decoder를 사용하여 학습을 진행합니다. 이를 통해 Encoder는 서로 공유되기 때문에 두 인물 사이에 공통적인 feature(눈, 코, 입의 위치 등...)를 추출하도록 학습하게 됩니다. 반면 Decoder 부분은 서로 다른 Decoder를 사용하기 때문에 Identity features(눈의 모양, 피부색 등..)를 추출하도록 학습하게 됩니다.![image-20210204165954147](img\image-20210204165954147.png)
-3. 마지막으로 Converting 입니다.  이 과정은 Decoder 파트를 2번 과정에서 학습한 B로 변경하여 B가 가지고 있는 특징만 추출하도록 하여 B의 얼굴로 변경하게  됩니다. ![image-20210204170401047](img\image-20210204170401047.png)
+1. 학습을 위해 이미지에서 사람의 얼굴 부분을 추출합니다.  alignments file , mask과 같은 파일을 추가적으로 추출 할 수 있습니다. 이 때 동영상을 기준으로 한다면 동영상에서 미리 프레임 단위로 쪼개 이미지를 저장해야합니다.![0](img/0.jpg)![0_face](img/0_face.jpg)
+2. 1번 과정에서 준비한 얼굴 이미지로 Autoencoder 학습을 진행합니다. 여기서 Deepfake의 핵심 아이디어는 Autoencoder에서 Source와 Target 둘 모두  같은Encoder를 사용하도록 하고, Decoder 부분은 서로 다른 Decoder를 사용하여 학습을 진행합니다. 이를 통해 Encoder는 서로 공유되기 때문에 두 인물 사이에 공통적인 feature(눈, 코, 입의 위치 등...)를 추출하도록 학습하게 됩니다. 반면 Decoder 부분은 서로 다른 Decoder를 사용하기 때문에 Identity features(눈의 모양, 피부색 등..)를 추출하도록 학습하게 됩니다.![image-20210204165954147](img/image-20210204165954147.png)
+3. 마지막으로 Converting 입니다.  이 과정은 Decoder 파트를 2번 과정에서 학습한 B로 변경하여 B가 가지고 있는 특징만 추출하도록 하여 B의 얼굴로 변경하게  됩니다. ![image-20210204170401047](img/image-20210204170401047.png)
 
 [Toy Model - Github](https://github.com/hanqingguo/deepfake-pytorch)
 
